@@ -1,0 +1,525 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bb2.jpg');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /*Center the image */
+    background-repeat: no-repeat; 
+}
+
+header {
+    /*color:white;*/
+    padding: 0px 0;
+    text-align: left;
+    margin-bottom: 10px;
+
+    background-image: url('nav\ background\ images.jpg');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /*Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    max-height: 10;
+    /*display: flex;
+    align-items: center;*/ 
+}
+
+header .logo {
+    position: bottom;
+    left: 15px;
+    bottom: 5%;
+    transform: translateY(-50%);
+   width: 30%;
+    max-height: 70px; /* Adjust the height as needed */
+    margin-right: 20px;
+    height: 70%; 
+    
+}
+.text .interactive {
+    color: #ffffff;
+size: 30;
+    font-size: large;
+}
+
+.text .tutors {
+    color: #ffffff;
+}
+.logo_style{
+    font-family: 'Brush Script MT', cursive;
+    size: 60px;
+    font-size: large;
+    text-shadow: #061658;
+    text-decoration-line: overline;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.navigation{
+    padding: 0%;
+    background-image: url('background1.jpeg');
+    max-height: 45px; /* Adjust the height as needed */
+    /*margin-right: 20px;*/
+    display: flex;
+    align-items: center;
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /*Center the image */
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: darkgreen;
+    size: 0vi;
+}
+/*@keyframes slider {
+    0%{background-image: url("Capture1.PNG");}
+        30%{background-image: url("Capture2.PNG");}
+            75%{background-image: url("Capture3.PNG");} 
+}*/
+
+
+.search-container {
+
+    max-width: 300px;
+    margin: auto;
+    right: 1%;
+    margin-right: 0%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    height: 30%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 50%;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: absolute;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.gradient-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: cover;
+    margin: cover;
+    width: auto;
+    height: 400px;
+    background: linear-gradient(40deg,#116530, #21B6A8,#A3EBB1, #18A558);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}*/
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(27, 137, 14);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-size-adjust: 20;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+/*.slideshow-container{
+    width:100%;
+    height:50%;
+
+
+}*/
+.container {
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+    
+}
+.mycontainer1 {
+    padding: 20px;
+    text-align: center;
+display: flex;
+position: center;
+}
+.mycontainer2 {
+    padding: 20px;
+    text-align: center;
+display: flex;
+position: center;
+}
+.mycontainer3 {
+    padding: 20px;
+    position: center;
+    text-align: center;
+display: flex;
+}
+.courses, .contact {
+    margin: 20px 0;
+}
+/*
+.impsub{
+    text-align: center;
+    position: center;
+    padding: 10%;
+    background-image: url("disc-co");
+}
+
+.video-block {
+    background-color: #99e9ef;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(38, 93, 109, 0.1);
+    width: 400px;
+    text-align: center;
+}
+.video-block h2 {
+    margin: 0.5rem 0;
+}
+.video-block p {
+    color: #666;
+}
+
+
+
+.impsub {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block1 {
+    animation: bounce 2s infinite;
+}
+
+.block2 {
+    ---animation: spin 3s linear infinite;
+    animation:bounce 2s infinite;
+}
+
+.block3 {
+    ---animation: slide 4s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 15%, 20%, 30%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.block3 {
+    background: linear-gradient(135deg, #6a89cc, #b8e994);
+    border: 3px solid #1e3799;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+}
+.block1 {
+    background: linear-gradient(135deg, #6a89cc, #b8e994);
+    border: 3px solid #1e3799;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+}.block2 {
+    background: linear-gradient(135deg, #6a89cc, #b8e994);
+    border: 3px solid #1e3799;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+}*/
+
+.modern-box {
+    
+    background: linear-gradient(40deg,#116530, #21B6A8,#A3EBB1, #18A558);
+    border: 6px solid #abbbf9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    padding: 50px;
+}
+.modern-box1 {
+    
+    background: linear-gradient(50deg,#4257BD,#449e97,#f79c93);
+    border: 6px solid #abbbf9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    padding: 50px;
+}
+
+.modern-box2 {
+    
+    background: single-gradient(50deg,#4257BD,#449e97,#f79c93);
+    border: 6px solid #abbbf9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    padding: 50px;
+}
+.modern-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modern-box p {
+    font-size: 16px;
+}
+
+/* Bounce Animation */
+.bounce {
+    animation: bounce 2s infinite;
+    width: 300px;
+    position: center;
+    
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Spin Animation */
+.spin {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade Animation */
+.fade {
+    animation: fade 5s infinite;
+    
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

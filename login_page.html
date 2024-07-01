@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_page.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+
+            // Perform login logic here (e.g., checking username and password)
+
+            // If login is successful, set a login flag (this is just an example)
+            localStorage.setItem('isLoggedIn', true);
+
+            // Redirect to home page after login
+            window.location.href = 'tution.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Login to Your Account</h1>
+    </header>
+    <nav>
+        <a href="tution.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="classes.html">Classes</a>
+        <a href="notes.html">Notes</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <div class="form login-form">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p><a href="#forgot-password">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+            </div>
+
+            <div class="form signup-form" id="signup">
+                <h2>Sign Up</h2>
+                <form action="#" method="post">
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" name="signup-name" required>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login_page.html">Login</a></p>
+            </div>
+
+            <div class="form forgot-password-form" id="forgot-password">
+                <h2>Forgot Password</h2>
+                <form action="#" method="post">
+                    <label for="forgot-password-email">Email:</label>
+                    <input type="email" id="forgot-password-email" name="forgot-password-email" required>
+                    <button type="submit">Reset Password</button>
+                </form>
+                <p>Remember your password? <a href="login_page.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
